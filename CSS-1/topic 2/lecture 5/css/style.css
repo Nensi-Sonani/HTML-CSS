@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.box{
+    width: 2000px;
+    -webkit-mask-image: url(../image/flying-butterfly-png-transparent-background-4.png);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: auto;
+    -webkit-mask-size: contain;
+
+}

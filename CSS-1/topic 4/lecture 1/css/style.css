@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.bg{
+    background-color: rgb(186, 75, 75);
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: rgb(246, 209, 209);
+    text-align: center;
+    font-size: 50px;
+    line-height: 100px;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-direction{
+    flex-direction: row;
+}

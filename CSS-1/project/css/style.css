@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --primary-200:#023b6d;
+    --content-color-200:#444444;
+    --primary-100:#007aff;
+    --primary-50:#f4f9fc;
+    --primary-400:#2f4d5a;
+    --content-color-100:#777777;
+}
+.raleway{
+    font-family: 'Raleway';
+}
+.open{
+    font-family: 'Open Sans';
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.font-16{
+    font-size: 16px;
+}
+.font-14{
+    font-size: 14px;
+}
+.font-18{
+    font-size: 18px;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-34{
+    font-size: 34px;
+}
+.font-40{
+    font-size: 40px;
+}
+.font-48{
+    font-size: 48px;
+}
+.text-white{
+    color: var(--white);
+}
+.text-primary-100{
+    color: var(--primary-100);
+}
+.text-primary-200{
+    color: var(--primary-200);
+}
+.text-primary-50{
+    color: var(--primary-50);
+}
+.text-primary-400{
+    color: var(--primary-400);
+}
+.text-content-color-100{
+    color: var(--content-color-100);
+}
+.text-content-color-200{
+    color: var(--content-color-200);
+}
+/* header css */
+header{
+    background-color: rgba(55, 142, 181, 0.9);
+    padding: 20px 10px;
+}
+header .logo a{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    /* color: var(--white); */
+}
+header nav ul > li > a{
+    padding: 8px 15px;
+    color: var(--white);
+    text-transform: capitalize;
+    font-weight: 700;
+    transition: all 0.5s;
+    margin: 0 5px;
+}
+
+header ul li:hover a{
+    background-color: #ffffff33;
+    /* padding: 10px 15px; */
+    /* transition: all 0.5s; */
+    color: var(--content-color-200);
+}
+.header .dropdown{
+    visibility: hidden;
+    transition: all 0.5s;
+    opacity: 0;
+    top: 120px;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+header .dropdown li a{
+    display: inline-block;
+    color: var(--primary-200);
+    font-weight: 500;
+    padding: 15px 30px;
+}
+header .dropdown li a:hover{
+    color: var(--primary-100);
+}
+header .dropdown li{
+    position: relative;
+}
+header ul li:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    top: 75px;
+}
+header .dropdown .submenu{
+    position: absolute;
+    visibility: hidden;
+    width: 180px;
+    left: 90%;
+    transition: all 0.5s;
+    opacity: 0;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0);
+}
+header .dropdown li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+}

@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.section-title h3{
+    position: relative;
+    width: 300px;
+    height: 1px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    padding: 20px;
+}
+.section-title h3::after{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: brown;
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.section-title h3::before{
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: brown;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: -22px;
+}
+.section-title2 h3{
+    position: relative;
+    width: 600px;
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    padding: 100px;
+}
+.section-title2 h3::after{
+    position: absolute;
+    content: "";
+    width: 300px;
+    height: 1px;
+    background-color: brown;
+    bottom: 80px;
+    right: 0;
+    /* top: 0; */
+    left: 0;
+    margin: auto;
+}
+.section-title2 h3::before{
+    position: absolute;
+    content: "\f185";
+    font-family: "Font Awesome 6 Free";
+    width: 50px;
+    bottom: 0;
+    top: 138px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background-color: white;
+    z-index: 9;
+    color: rgb(109, 43, 43);
+}

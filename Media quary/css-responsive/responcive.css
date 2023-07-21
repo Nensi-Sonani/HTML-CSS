@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width:576px) {
+    body{
+        background-color: rgb(71, 71, 255);
+    }
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    body{
+        background-color: rgb(65, 65, 106);
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    body{
+        background-color: rgb(104, 235, 139);
+    }
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+    body{
+        background-color: rgb(74, 207, 255);
+    }
+}
+
+@media (min-width:1200px){
+    body{
+        background-color: rgb(255, 71, 114);
+    }
+}

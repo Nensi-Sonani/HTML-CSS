@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+    padding: 50px;
+    margin: auto;
+    border: dashed gray;
+    color: gray;
+    border-bottom: 20px solid;
+    border-top: 15px groove ;
+    border-right: 20px dashed;
+    border-left: 15px double;
+    border-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 70px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 20px;
+    border-style: groove;
+    border-radius: 100%;
+}
+
+body{
+    background-color: rgb(174, 174, 224);
+}
+
+.box-2{
+    width: 500px;
+    padding: 40px;
+    margin: auto;
+    background-color: azure;
+}
+
+i{
+    display: none;
+}
+
+h2{
+    display: inline-block;
+    padding: 15px ;
+}
+
+label{
+    padding: 15px 20px;
+    display: inline-block;
+}

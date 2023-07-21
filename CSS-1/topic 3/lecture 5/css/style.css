@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(46, 46, 46);
+}
+.icon-box{
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: rgb(red, green, blue);
+    margin: 50px auto;
+    color: rgb(85, 85, 85);
+    font-size: 30px;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px black;
+    
+}
+.icon-box i{
+    line-height: 60px;
+    transition: all 0.5s;
+    transform: rotate(0) scale(0.8);
+}
+.icon-box:hover{
+    color: yellow;
+    box-shadow: 0px 0px 15px yellow;
+}
+.icon-box:hover i{
+    transform: rotate(360deg) scale(1);
+}
+.btn,.btn2{
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin: 100px auto;
+    background-color: rgb(77, 77, 77);
+    z-index: 1;
+    border: 1px solid black;
+}
+.btn::after{
+    width: 0%;
+    height: 00%;
+    position: absolute;
+    content: "";
+    background-color: yellow;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.7s;
+    margin: auto;
+    z-index: -1;
+}
+.btn:hover::after{
+    width: 100%;
+    height: 100%;
+    box-shadow: 10px 10px 15px rgba(249, 255, 144, 0.748);
+}
+.btn2::after{
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    content: "";
+    background-color: yellow;
+    top: 0;
+    left: 0;
+    right: 100% ; 
+     bottom:100%; 
+    transition: all 0.7s;
+    z-index: -1;
+    
+}
+.btn2:hover::after{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.btn2 p{
+    transition: all 0.5s;
+    transform:  rotate(0) scale(0.8);
+
+}
+
+.btn2 p:hover{
+    transform:  rotate(360deg) scale(2);
+}

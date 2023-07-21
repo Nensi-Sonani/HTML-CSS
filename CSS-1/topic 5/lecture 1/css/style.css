@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.box{
+    width: 600px;
+    background-color: rgb(79, 131, 176);
+    padding: 50px;
+}
+.box p{
+    font-size: 35px;
+}
+.box + p{
+    color: red;
+}
+p::first-letter{
+    font-size: 80px;
+    color: rgb(32, 0, 128);
+}
+p::first-line{
+    background-color: rgb(117, 180, 205);
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.child{
+    width: 100px;
+    height: 200px;
+    background-color: rgb(122, 194, 214);
+    margin: 10px;
+}
+.child:first-child{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(149, 205, 254);
+}
+.child:last-child{
+    height: 100px;
+    width: 50px;
+    background-color: rgb(161, 207, 246);
+}
+.child:nth-child(3){
+    width: 150px;
+    background-color: rgb(32, 144, 243);
+}
+.child:nth-child(2){
+    background-color: rgb(102, 179, 245);
+    height: 150px;
+}
+.child:nth-last-child(2){
+    background-color: rgb(102, 179, 245);
+    height: 150px;
+}
+.box > p::selection{
+    user-select: none;
+    background-color: black;
+    color: white;
+}

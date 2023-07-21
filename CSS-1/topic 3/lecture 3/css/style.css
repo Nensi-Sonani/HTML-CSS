@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 300px;
+    height: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 50px auto;
+    transition-duration: 2s;
+    /* transition-delay: 1s; */
+    transition-timing-function: linear;
+    /* transition-property: transform; */
+}
+img{
+    width: 300px;
+    height: 250px;
+}
+.box:hover{
+    transform: scale(1.2);
+    filter: grayscale(1);
+}
+.box:hover img{
+    transform: skew(-20deg);
+    /* transform: rotate(60deg); */
+    transition-timing-function: ease;
+}
+button{
+    display: inline-block;
+    background-color: brown;
+    padding: 15px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+button:focus{
+    background-color: cadetblue;
+}

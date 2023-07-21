@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.circle{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    padding: 15px;
+    margin: auto;
+}
+.img{
+    margin: auto;
+}
+.png{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding: 70px;
+}
+header{
+    height: 50px;
+    background-color: rgb(91, 148, 150);
+    text-align: center;
+    color: aliceblue;
+    top: 0;
+    position: sticky;
+    z-index: 999;
+}
